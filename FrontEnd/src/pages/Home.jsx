@@ -1,9 +1,9 @@
-import Navbar from "../components/Navbar";
+import Navbar from '../components/mainPage/Navbar';
 import '../styles/Home.css';
 const Home = () => {
     return (
         <>
-            <Navbar />
+        <Navbar/>
         </>
     );
 }
