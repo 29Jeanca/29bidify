@@ -1,20 +1,12 @@
-const Hero=()=>{
+/* eslint-disable react/prop-types */
+import "../mainPage/styles/Hero.css";
+const Hero = ({urlImage}) => {
     return(
         <>
-            <div>
-                <article>
-                    <h2>
-
-                    </h2>
-                    <p>
-
-                    </p>
-                    <button>Sign Up</button>
-                    <button>Create An Account</button>
-                </article>
-                <img src="" alt="" />
+            <div className="hero-container">
+                <img className="hero-img" src={urlImage} alt="hero" />
             </div>
         </>
     )
 }
-export default Hero
+export default Hero;
