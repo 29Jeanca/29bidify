@@ -1,11 +1,21 @@
-.btn-login{
-    border: 1px solid #FDCA40;
-    margin-right: 2vw;
-    width: 8vw;
-}
+.navbar-content{
+    background-color: #CD7F32;
 
-.btn-login:hover{
-    background-color: #FDCA40;
-    color: white;
-    transition: 0.3s;
+    h1{
+        color: #FAF9F6;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    button{
+        border: none;
+    }
+
+    ul{
+        li{
+            a{
+        color: #FAF9F6;
+    }
+    }
+    }
 }

@@ -1,17 +1,17 @@
+import {Link} from 'react-router-dom';
 import { useState } from 'react';
 import "../mainPage/styles/Navbar.css";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <nav className="navbar navbar-expand-lg">
-      <a className="navbar-brand" href="#">
+    <nav className="navbar navbar-expand-lg navbar-content">
+      <h1 className="navbar-brand">
         Bidify
-      </a>
+      </h1>
       <button
         className="navbar-toggler"
         type="button"
@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNavDropdown">
         <ul className="navbar-nav me-auto">
           <li className="nav-item active">
-            <a className="nav-link" href="#">Home</a>
+            <Link className="nav-link" href="#">Home</Link>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">About Us</a>
