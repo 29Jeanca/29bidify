@@ -1,10 +1,12 @@
-/* eslint-disable react/prop-types */
 import "../mainPage/styles/Hero.css";
-const Hero = ({urlImage}) => {
+const Hero = () => {
+    const IMGS  = [
+        "../src/assets/imgs/hero_image.jpg"
+    ]
     return(
         <>
             <div className="hero-container">
-                <img className="hero-img" src={urlImage} alt="hero" />
+                <img className="hero-img" src={IMGS[0]} alt="hero" />
             </div>
         </>
     )
